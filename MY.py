@@ -25,10 +25,19 @@ st.subheader("🌤️ Kondisi Cuaca & Lingkungan")
 col1, col2 = st.columns(2)
 
 with col1:
-    suhu = st.number_input("Masukkan Suhu Udara (°C):", min_value=0.0, max_value=50.0, value=30.0, step=0.5)
+    suhu = st.number_input(
+        "Masukkan Suhu Udara (°C):", min_value=0, max_value=50, value=30, step=1, format="%d"
+    )
 
 with col2:
-    kelembapan = st.number_input("Masukkan Kelembapan Udara / RH (%):", min_value=0.0, max_value=100.0, value=65.0, step=1.0)
+    kelembapan = st.number_input(
+        "Masukkan Kelembapan Udara / RH (%):",
+        min_value=0,
+        max_value=100,
+        value=65,
+        step=1,
+        format="%d"
+    )
 
 opsi_langit = {
     "Cerah": 1,
