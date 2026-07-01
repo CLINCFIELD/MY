@@ -30,7 +30,7 @@ with col1:
         "Masukkan Suhu Udara (°C):", 
         min_value=0, 
         max_value=50, 
-        value=30°C, 
+        value=30 °C, 
         step=1, 
         format="%d"
     )
