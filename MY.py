@@ -40,7 +40,7 @@ with col2:
         "Masukkan Kelembapan Udara / RH (%):",
         min_value=0,
         max_value=100,
-        value=10%,
+        value=10,
         step=1,
         format="%d"
     )
