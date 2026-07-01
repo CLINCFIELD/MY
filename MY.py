@@ -30,7 +30,8 @@ with col1:
         "Masukkan Suhu Udara (°C):", 
         min_value=0, 
         max_value=50, 
-        value=0, step=1, 
+        value=30°C, 
+        step=1, 
         format="%d"
     )
 
@@ -39,7 +40,7 @@ with col2:
         "Masukkan Kelembapan Udara / RH (%):",
         min_value=0,
         max_value=100,
-        value=0,
+        value=10%,
         step=1,
         format="%d"
     )
