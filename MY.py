@@ -26,7 +26,11 @@ col1, col2 = st.columns(2)
 
 with col1:
     suhu = st.number_input(
-        "Masukkan Suhu Udara (°C):", min_value=0, max_value=50, value=30, step=1, format="%d"
+        "Masukkan Suhu Udara (°C):", 
+        min_value=0, 
+        max_value=50, 
+        value=30, step=1, 
+        format="%d"
     )
 
 with col2:
