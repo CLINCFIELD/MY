@@ -1,4 +1,5 @@
-import datetime
+from datetime import datetime
+from zoneinfo import ZoneInfo
 import time
 import streamlit as st
 
@@ -74,7 +75,7 @@ if st.button("🔴 Jalankan Analisis Sistem Pakar", type="primary"):
         kesimpulan_cuaca = "MODERAT (FLUKTUATIF)"
 
     # --- 4. HASIL ANALISIS & REKOMENDASI ---
-    waktu_sekarang = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    waktu_sekarang = datetime.now(ZoneInfo("Asia/Jakarta")).strftime("%Y-%m-%d %H:%M:%S")
     
     st.success(f"### 📊 Hasil Analisis Sistem Pakar ({waktu_sekarang})")
     
